@@ -1,0 +1,24 @@
+create database Appdata;
+use appdata;
+create table students(Name varchar(60) not null, CurClass varchar(2) not null, Gender varchar(20),Phone_Number varchar(13) Primary Key, Address varchar(100), dob varchar(12) not null);
+create table teachers(Name varchar(60) not null, Degree varchar(150) not null, Subject varchar(50) not null,Gender varchar(20),Phone_Number varchar(12) Primary Key, CBSE_Number varchar(30) , Address varchar(100), DOB varchar(12) not null);
+
+create table marks(English varchar(3), Maths varchar(3),Physics varchar(3), Chemistry varchar(3), Optional varchar(3));
+create table login(Name varchar(40), Phone_Number Varchar(12),Password varchar(40));
+
+create table fees(Class int(2) primary key, Quarter1 decimal(8,2),
+    -> Quarter2 decimal(8,2), Quarter3 decimal(8,2),
+    -> Quarter4 decimal(8,2), Yearly decimal(10,2));
+
+insert into fees values(1,21450.00,21450.00,21450.00,21450.00,85800.00);
+insert into fees values(2,21450.00,21450.00,21450.00,21450.00,85800.00);
+insert into fees values(3,21450.00,21450.00,21450.00,21450.00,85800.00);
+insert into fees values(4,23500.00,23500.00,23500.00,23500.00,94000.00);
+insert into fees values(5,23500.00,23500.00,23500.00,23500.00,94000.00);
+insert into fees values(6,25467.50,25467.50,25467.50,25467.50,101870.00);
+insert into fees values(7,25467.50,25467.50,25467.50,25467.50,101870.00);
+insert into fees values(8,25467.50,25467.50,25467.50,25467.50,101870.00);
+insert into fees values(9,26570.00,26570.00,26570.00,26570.00,106280.00);
+insert into fees values(10,26570.00,26570.00,26570.00,26570.00,106280.00);
+insert into fees values(11,27890.00,27890.00,27890.00,27890.00,111560.00);
+insert into fees values(12,27890.00,27890.00,27890.00,27890.00,111560.00);
